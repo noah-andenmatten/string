@@ -4,12 +4,19 @@
     <title>String manipulation</title>
 </head>
 <body>
-    <h1 id="sentence"> bla bla blah this is a text filer soo use bullshit ads on me</h1>
+    <h1 id="sentence"> BLA bla blah this is a text filer soo use bullshit ads on me</h1>
     <script>
         var sentencenode= document.getElementById("sentence")
         var sentence= sentencenode.innerText
 
-        console.log("sentence", sentence)
+        var upperSentence= sentence.toUpperCase() // () does the wanted thing to the string//
+        var lowerSentence= sentence.toLowerCase()
+        var firstTenChars= sentence.substring(10)
+
+        var allWords= sentence.split(" ") //splits whenever there is a space, makes array = list of elements and maintains thei order//
+        
+
+        console.log(allWords)
     </script>
 
 </body>
